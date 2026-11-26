@@ -20,3 +20,13 @@ python -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
+## Build Styles
+
+Tailwind CSS is compiled locally for production and served from `styles.css`. After changing Tailwind classes, regenerate the stylesheet with:
+
+```bash
+npm install
+npm run build:css
+```
+
+Commit the regenerated `styles.css` with your changes so static hosting can serve the site without a build step.
